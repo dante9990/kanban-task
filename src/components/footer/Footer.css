@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    padding: 17px 21px;
+    justify-content: space-between;
+    align-items: center;
+    background: #0067a3;
+  }
+  
+  .footer__text {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .footer__tasks .footer__text {
+    margin-right: 36px;
+  }
