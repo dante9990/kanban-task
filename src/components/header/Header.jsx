@@ -5,6 +5,8 @@ import './Header.css'
 function Header() {
     const [visible, setVisible] = useState(false)
 
+
+
     return (
         <header className="header">
             <h1 className='header__title'>Awesome Kanban Board</h1>

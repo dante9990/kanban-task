@@ -23,12 +23,10 @@ function FormSubmit(props) {
     return (
         <form className="form" onSubmit={handleSubmit}>
             <div className="form__item">
-                <label htmlFor="name" className="label">Name:</label>
-                <input type='text' name="name" id="name" className="input" onChange={handleChange} />
+                <input type='text' name="name" id="name" className="input" onChange={handleChange} placeholder="Name" />
             </div>
             <div className="form__item">
-                <label htmlFor="description" className="label">Description:</label>
-                <input type="text" name="description" id="description" className="input" onChange={handleChange} />
+                <input type="text" name="description" id="description" className="input" onChange={handleChange} placeholder="Description" />
             </div>
             <button className="btn__submit" type='submit'>
                 Submit

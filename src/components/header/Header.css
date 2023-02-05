@@ -46,6 +46,7 @@
   background: #fff;
   border-radius: 5px;
   display: none;
+  z-index: 20;
 }
 
 .profile__menu-active {
@@ -66,8 +67,7 @@
 }
 
 .profile__item:hover {
-  background: rgb(83, 83, 83);
-  color: #fff;
+  background: #DEDEDE;
 }
 
 .profile__menu::before {

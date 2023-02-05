@@ -1,0 +1,31 @@
+.task-detail {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 22px 30px;
+    border-radius: 5px;
+    min-height: 548px;
+    width: 100%;
+}
+
+.task-detail__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.task-detail__title {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.task-detail__close {
+    width: 23px;
+    height: 23px;
+    background: url('../../img/close.svg') no-repeat;
+}
+
+.task-detail__text {
+    width: 621px;
+    font-size: 18px;
+}

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -10,12 +11,7 @@ const dataMock = [
     issues: [
       {
         id: '1',
-        name: 'Shop page – performance issues',
-        description: 'Fix all the bugs'
-      },
-      {
-        id: '5',
-        name: 'dsdfas',
+        name: 'Sprint bugfix',
         description: 'Fix all the bugs'
       }
     ]
@@ -24,7 +20,7 @@ const dataMock = [
     title: 'ready',
     issues: [
       {
-        id: '2',
+        id: '12',
         name: 'Sprint bugfix',
         description: 'Fix all the bugs'
       }
@@ -34,13 +30,8 @@ const dataMock = [
     title: 'in progress',
     issues: [
       {
-        id: '3',
+        id: '123',
         name: 'Sprint bugfix',
-        description: 'Fix all the bugs'
-      },
-      {
-        id: '7',
-        name: 'Scvbhgj',
         description: 'Fix all the bugs'
       }
     ]
@@ -49,12 +40,7 @@ const dataMock = [
     title: 'finished',
     issues: [
       {
-        id: '4',
-        name: 'Sprint bugfix',
-        description: 'Fix all the bugs'
-      },
-      {
-        id: '6',
+        id: '1234',
         name: 'Sprint bugfix',
         description: 'Fix all the bugs'
       }
@@ -63,15 +49,24 @@ const dataMock = [
 ]
 
 function App() {
+  const initialState = JSON.parse(window.localStorage.getItem('tasks')) || dataMock
+  const [tasks, setTasks] = useState(initialState)
 
-  const [tasks, setTasks] = useState(dataMock)
-  
+  useEffect(() => {
+    window.localStorage.setItem('tasks', JSON.stringify(tasks))
+  }, [tasks])
+
+
   return (
+    <BrowserRouter>
     <div className="App">
-      <Header />
-      <Main tasks={tasks} setTasks={setTasks} />
-      <Footer tasks={tasks} />
+      
+        <Header />
+        <Main tasks={tasks} setTasks={setTasks} />
+        <Footer tasks={tasks} />
+      
     </div>
+    </BrowserRouter>
   );
 }
 

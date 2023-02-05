@@ -5,6 +5,7 @@
     padding: 12px;
     background: #ebecf0;
     border-radius: 10px;
+    min-width: 282px;
 }
 
 .list__title,
@@ -24,8 +25,10 @@
     flex-direction: column;
     margin-bottom: 17px;
     max-height: 479px;
-    max-width: 282px;
+    max-width: 258px;
     overflow-y: auto;
+    
+    
 }
 
 .list__item {
@@ -44,3 +47,7 @@
     margin: 7px 8px 7px 8px;
 }
 
+.link {
+    text-decoration: none;
+    color: #000000;
+}
