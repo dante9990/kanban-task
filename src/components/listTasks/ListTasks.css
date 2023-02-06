@@ -1,7 +1,7 @@
 .select {
     display: flex;
     flex-direction: column;
-    width: 258px;
+    width: 246px;
 }
 
 .select__emty {
@@ -21,7 +21,6 @@
     background: url("../../img/arrow-list.svg");
     right: 10px;
     top: 30%;
-    z-index: 3;
     transition: 0.5s;
     transform: rotate(180deg);
 }
@@ -32,14 +31,12 @@
 
 .select__items {
     display: none;
-    width: 258px;
+    width: 246px;
     flex-direction: column;
     justify-content: space-between;
     background: #fff;
     border-radius: 5px;
-    margin-top: 38px;
-    position: absolute;
-    z-index: 10;
+    margin-top: 3px;
 }
 
 .select__items-active {

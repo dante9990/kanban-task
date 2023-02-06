@@ -9,41 +9,41 @@ const dataMock = [
   {
     title: 'backlog',
     issues: [
-      {
-        id: '1',
-        name: 'Sprint bugfix',
-        description: 'Fix all the bugs'
-      }
+      // {
+      //   id: '1',
+      //   name: 'Sprint bugfix',
+      //   description: 'Fix all the bugs'
+      // }
     ]
   },
   {
     title: 'ready',
     issues: [
-      {
-        id: '12',
-        name: 'Sprint bugfix',
-        description: 'Fix all the bugs'
-      }
+      // {
+      //   id: '12',
+      //   name: 'Sprint bugfix',
+      //   description: 'Fix all the bugs'
+      // }
     ]
   },
   {
     title: 'in progress',
     issues: [
-      {
-        id: '123',
-        name: 'Sprint bugfix',
-        description: 'Fix all the bugs'
-      }
+      // {
+      //   id: '123',
+      //   name: 'Sprint bugfix',
+      //   description: 'Fix all the bugs'
+      // }
     ]
   },
   {
     title: 'finished',
     issues: [
-      {
-        id: '1234',
-        name: 'Sprint bugfix',
-        description: 'Fix all the bugs'
-      }
+      // {
+      //   id: '1234',
+      //   name: 'Sprint bugfix',
+      //   description: 'Fix all the bugs'
+      // }
     ]
   },
 ]

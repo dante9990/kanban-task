@@ -12,7 +12,7 @@ function Footer({tasks}) {
                 <span className='footer__text'>Active tasks: {activeTasks[0].issues.length}</span>
                 <span className='footer__text'>Finished tasks: {finisedTasks[0].issues.length} </span>
             </div>
-            <span className='footer__text'>Kanban board by Alexey, 2023</span>
+            <span className='dev'>Kanban board by Alexey, 2023</span>
         </footer>
     )
 }

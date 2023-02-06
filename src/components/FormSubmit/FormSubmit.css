@@ -1,7 +1,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    width: 282px;
+    width: 246px;
     background: #ebecf0;
     font-size: 18px;
 }
@@ -11,9 +11,10 @@
     justify-content: space-between;
     margin-bottom: 10px;
     border-radius: 5px;
-    width: 258px;
+    width: 100%;
     background: #fff;
     padding: 7px 8px 7px 8px;
+    
 }
 
 .input {
