@@ -25,9 +25,6 @@ function FormSubmit(props) {
             <div className="form__item">
                 <input type='text' name="name" id="name" className="input" onChange={handleChange} placeholder="Name" />
             </div>
-            <div className="form__item">
-                <input type="text" name="description" id="description" className="input" onChange={handleChange} placeholder="Description" />
-            </div>
             <button className="btn__submit" type='submit'>
                 Submit
             </button>
